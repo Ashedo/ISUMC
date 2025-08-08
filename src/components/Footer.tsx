@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { MapPin, Mail, Phone, Calendar, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { MapPin, Mail, Phone, CalendarDays, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
@@ -118,7 +118,7 @@ const Footer = () => {
                 <p className="text-primary-foreground/80">+964 xxx xxx xxx</p>
               </div>
               <div className="flex items-center space-x-3">
-                <Calendar className="w-5 h-5 text-academic-gold flex-shrink-0" />
+                <CalendarDays className="w-5 h-5 text-academic-gold flex-shrink-0" />
                 <p className="text-primary-foreground/80">October 25–27, 2025</p>
               </div>
             </div>

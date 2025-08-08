@@ -1,35 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Target, Link, Lightbulb, Users, GraduationCap, Award, Sparkles, ArrowUpRight } from "lucide-react";
+import { Target, Link2, Lightbulb, UsersRound, GraduationCap, Award, Sparkles, ArrowUpRight, Users } from "lucide-react";
+import IconBadge from "@/components/IconBadge";
 
 const ConferenceAims = () => {
   const aims = [
     {
-      icon: <Target className="w-8 h-8 text-primary" />,
+      icon: <Target className="w-7 h-7" />,
       title: "Enhancing Medical Education Quality",
       description: "Implementing best practices and innovative methodologies to elevate the standard of medical education across Iraqi institutions."
     },
     {
-      icon: <Link className="w-8 h-8 text-primary" />,
+      icon: <Link2 className="w-7 h-7" />,
       title: "Bridging Academic Gaps",
       description: "Connecting theoretical knowledge with practical application, ensuring graduates are well-prepared for clinical practice."
     },
     {
-      icon: <Lightbulb className="w-8 h-8 text-primary" />,
+      icon: <Lightbulb className="w-7 h-7" />,
       title: "Supporting Innovation and Research",
       description: "Fostering a culture of research and innovation in medical education, encouraging evidence-based teaching approaches."
     },
     {
-      icon: <Users className="w-8 h-8 text-primary" />,
+      icon: <UsersRound className="w-7 h-7" />,
       title: "Promoting Collaboration and Networking",
       description: "Building strong professional networks among medical educators, institutions, and healthcare organizations."
     },
     {
-      icon: <GraduationCap className="w-8 h-8 text-primary" />,
+      icon: <GraduationCap className="w-7 h-7" />,
       title: "Faculty Development",
       description: "Providing continuous professional development opportunities for medical educators to enhance their teaching skills."
     },
     {
-      icon: <Award className="w-8 h-8 text-primary" />,
+      icon: <Award className="w-7 h-7" />,
       title: "Setting Excellence Standards",
       description: "Establishing benchmarks for medical education excellence that align with international standards and local needs."
     }
@@ -63,15 +64,9 @@ const ConferenceAims = () => {
               
               <CardContent className="p-8 relative z-10">
                 <div className="mb-6 group-hover:scale-110 transition-transform duration-500">
-                  <div className="w-20 h-20 bg-gradient-primary rounded-3xl flex items-center justify-center shadow-elevated relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
-                    <div className="relative z-10 text-primary-foreground">
-                      {aim.icon}
-                    </div>
-                    <div className="absolute top-1 right-1">
-                      <Sparkles className="w-4 h-4 text-academic-gold opacity-80" />
-                    </div>
-                  </div>
+                  <IconBadge size="lg" variant="primary">
+                    {aim.icon}
+                  </IconBadge>
                 </div>
                 
                 <h3 className="text-xl font-bold text-foreground mb-4 leading-tight group-hover:text-primary transition-colors duration-300">

@@ -1,28 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, BookOpen, Target, Globe } from "lucide-react";
+import { Users2, GraduationCap, Microscope, Globe2 } from "lucide-react";
+import IconBadge from "@/components/IconBadge";
 
 const AboutSection = () => {
   const highlights = [
-    {
-      icon: <Target className="w-8 h-8 text-primary" />,
-      title: "Educational Excellence",
-      description: "Advancing medical education standards across Iraq and the region"
-    },
-    {
-      icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Expert Network",
-      description: "Connecting medical educators, students, and healthcare professionals"
-    },
-    {
-      icon: <BookOpen className="w-8 h-8 text-primary" />,
-      title: "Research Focus",
-      description: "Promoting innovative research in medical education methodologies"
-    },
-    {
-      icon: <Globe className="w-8 h-8 text-primary" />,
-      title: "Global Standards",
-      description: "Implementing international best practices in medical education"
-    }
+    { icon: <GraduationCap className="w-7 h-7" />, title: "Educational Excellence", description: "Advancing medical education standards across Iraq and the region" },
+    { icon: <Users2 className="w-7 h-7" />, title: "Expert Network", description: "Connecting medical educators, students, and healthcare professionals" },
+    { icon: <Microscope className="w-7 h-7" />, title: "Research Focus", description: "Promoting innovative research in medical education methodologies" },
+    { icon: <Globe2 className="w-7 h-7" />, title: "Global Standards", description: "Implementing international best practices in medical education" }
   ];
 
   return (
@@ -51,7 +36,7 @@ const AboutSection = () => {
             <Card key={index} className="group hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 bg-card border-border">
               <CardContent className="p-6 text-center">
                 <div className="mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
-                  {highlight.icon}
+                  <IconBadge variant="muted">{highlight.icon}</IconBadge>
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">
                   {highlight.title}

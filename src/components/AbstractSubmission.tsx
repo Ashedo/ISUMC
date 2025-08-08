@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Upload, FileText, CheckCircle, AlertCircle, Book } from "lucide-react";
+import { Upload, FileText, CheckCircle2, AlertCircle, BookOpenText, CheckCircle } from "lucide-react";
 
 const AbstractSubmission = () => {
   const fields = [
@@ -47,7 +47,7 @@ const AbstractSubmission = () => {
             <Card className="bg-academic-blue-light border-border shadow-card h-fit sticky top-8">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <Book className="w-6 h-6 text-primary mr-3" />
+                  <BookOpenText className="w-6 h-6 text-academic-navy mr-3" />
                   <h3 className="text-xl font-semibold text-foreground">
                     Submission Guidelines
                   </h3>
@@ -56,7 +56,7 @@ const AbstractSubmission = () => {
                 <div className="space-y-3">
                   {guidelines.map((guideline, index) => (
                     <div key={index} className="flex items-start">
-                      <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-green-700 mr-2 mt-0.5 flex-shrink-0" />
                       <span className="text-sm text-foreground">{guideline}</span>
                     </div>
                   ))}
@@ -235,7 +235,7 @@ const AbstractSubmission = () => {
             <CardContent className="p-8 md:p-12 text-center">
               <div className="max-w-3xl mx-auto">
                 <div className="w-16 h-16 bg-primary-foreground/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Book className="w-8 h-8 text-primary-foreground" />
+                  <BookOpenText className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <h3 className="text-3xl font-bold text-primary-foreground mb-4">
                   Publication Opportunity

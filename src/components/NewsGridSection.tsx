@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Calendar, User, TrendingUp, Award, Globe, BookOpen } from "lucide-react";
+import { ArrowRight, CalendarDays, UserRound, TrendingUp, Award, Globe2, BookOpenText, BookOpen } from "lucide-react";
 import news1 from "@/assets/news-1.jpg";
 import news2 from "@/assets/news-2.jpg";
 import news3 from "@/assets/news-3.jpg";
@@ -44,7 +44,7 @@ const NewsGridSection = () => {
       author: "Dr. Fatima Al-Zahra",
       readTime: "6 min read",
       trending: true,
-      icon: <Globe className="w-4 h-4" />,
+      icon: <Globe2 className="w-4 h-4" />,
       gradient: "from-academic-gold/20 to-academic-blue/20"
     }
   ];
@@ -68,7 +68,7 @@ const NewsGridSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-2 rounded-full mb-6 shadow-glow">
-            <BookOpen className="w-5 h-5" />
+            <BookOpenText className="w-5 h-5" />
             <span className="font-semibold">Latest Updates</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -131,11 +131,11 @@ const NewsGridSection = () => {
                 {/* Meta Information */}
                 <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                   <div className="flex items-center gap-1">
-                    <Calendar className="w-4 h-4" />
+                    <CalendarDays className="w-4 h-4" />
                     <span>{item.date}</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <User className="w-4 h-4" />
+                    <UserRound className="w-4 h-4" />
                     <span>{item.author}</span>
                   </div>
                   <span className="text-primary font-medium">{item.readTime}</span>
@@ -182,9 +182,9 @@ const NewsGridSection = () => {
         {/* Statistics */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { label: "Published Articles", value: "150+", icon: <BookOpen className="w-6 h-6" /> },
+            { label: "Published Articles", value: "150+", icon: <BookOpenText className="w-6 h-6" /> },
             { label: "Research Papers", value: "85+", icon: <Award className="w-6 h-6" /> },
-            { label: "Global Contributors", value: "50+", icon: <Globe className="w-6 h-6" /> },
+            { label: "Global Contributors", value: "50+", icon: <Globe2 className="w-6 h-6" /> },
             { label: "Monthly Readers", value: "10K+", icon: <TrendingUp className="w-6 h-6" /> }
           ].map((stat, index) => (
             <Card key={index} className="bg-background/80 backdrop-blur-sm border-border shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1">

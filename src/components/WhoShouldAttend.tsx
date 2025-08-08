@@ -1,40 +1,41 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { UserCheck, GraduationCap, BookOpen, Users, Target, Stethoscope } from "lucide-react";
+import { UserRoundCheck, GraduationCap, BookOpenText, UsersRound, Target, Stethoscope } from "lucide-react";
+import IconBadge from "@/components/IconBadge";
 
 const WhoShouldAttend = () => {
   const attendees = [
     {
-      icon: <UserCheck className="w-8 h-8 text-primary" />,
+      icon: <UserRoundCheck className="w-7 h-7" />,
       title: "Medical Educators & Faculty",
       description: "Professors, associate professors, and teaching staff from medical schools and universities",
       count: "200+"
     },
     {
-      icon: <GraduationCap className="w-8 h-8 text-primary" />,
+      icon: <GraduationCap className="w-7 h-7" />,
       title: "Health Sciences Students",
       description: "Medical, dental, nursing, pharmacy, and public health students at all levels",
       count: "150+"
     },
     {
-      icon: <BookOpen className="w-8 h-8 text-primary" />,
+      icon: <BookOpenText className="w-7 h-7" />,
       title: "Medical Education Professionals",
       description: "Education specialists, curriculum developers, and instructional designers",
       count: "80+"
     },
     {
-      icon: <Target className="w-8 h-8 text-primary" />,
+      icon: <Target className="w-7 h-7" />,
       title: "Curriculum Developers",
       description: "Experts in designing and implementing medical education curricula and programs",
       count: "50+"
     },
     {
-      icon: <Users className="w-8 h-8 text-primary" />,
+      icon: <UsersRound className="w-7 h-7" />,
       title: "Academic Leaders",
       description: "Deans, department heads, and academic administrators from healthcare institutions",
       count: "40+"
     },
     {
-      icon: <Stethoscope className="w-8 h-8 text-primary" />,
+      icon: <Stethoscope className="w-7 h-7" />,
       title: "Healthcare Professionals",
       description: "Practicing physicians, nurses, and healthcare providers interested in education",
       count: "100+"
@@ -74,9 +75,7 @@ const WhoShouldAttend = () => {
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div className="group-hover:scale-110 transition-transform duration-300">
-                    <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center shadow-card">
-                      {attendee.icon}
-                    </div>
+                    <IconBadge>{attendee.icon}</IconBadge>
                   </div>
                   <div className="text-right">
                     <span className="text-2xl font-bold text-primary">{attendee.count}</span>

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram, Send } from "lucide-react";
+import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram, SendHorizonal } from "lucide-react";
 
 const ContactSection = () => {
   const contactInfo = [
@@ -116,7 +116,7 @@ const ContactSection = () => {
             <Card className="bg-background border-border shadow-card">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <Send className="w-6 h-6 text-primary mr-3" />
+                  <SendHorizonal className="w-6 h-6 text-primary mr-3" />
                   <h3 className="text-2xl font-semibold text-foreground">
                     Send us a Message
                   </h3>
@@ -160,7 +160,7 @@ const ContactSection = () => {
                     type="submit" 
                     className="w-full bg-gradient-primary hover:bg-primary-hover text-primary-foreground font-semibold py-3 shadow-elevated"
                   >
-                    <Send className="w-4 h-4 mr-2" />
+                    <SendHorizonal className="w-4 h-4 mr-2" />
                     Send Message
                   </Button>
                 </form>

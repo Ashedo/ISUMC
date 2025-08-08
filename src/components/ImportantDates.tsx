@@ -1,39 +1,39 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Clock, FileText, CheckCircle, MapPin, Download } from "lucide-react";
+import { CalendarDays, Clock3, FileText, CheckCircle2, MapPin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ImportantDates = () => {
   const dates = [
     {
-      icon: <FileText className="w-6 h-6 text-primary" />,
+      icon: <FileText className="w-6 h-6" />,
       title: "Abstract Submission Opens",
       date: "January 1, 2025",
       status: "active",
       description: "Begin submitting your research abstracts"
     },
     {
-      icon: <Clock className="w-6 h-6 text-primary" />,
+      icon: <Clock3 className="w-6 h-6" />,
       title: "Abstract Submission Deadline",
       date: "August 31, 2025",
       status: "upcoming",
       description: "Final date for abstract submissions"
     },
     {
-      icon: <CheckCircle className="w-6 h-6 text-primary" />,
+      icon: <CheckCircle2 className="w-6 h-6" />,
       title: "Abstract Acceptance Notification",
       date: "September 30, 2025",
       status: "upcoming",
       description: "Authors will be notified of acceptance"
     },
     {
-      icon: <Calendar className="w-6 h-6 text-primary" />,
+      icon: <CalendarDays className="w-6 h-6" />,
       title: "Early Bird Registration Ends",
       date: "September 15, 2025",
       status: "upcoming",
       description: "Last chance for discounted registration"
     },
     {
-      icon: <MapPin className="w-6 h-6 text-primary" />,
+      icon: <MapPin className="w-6 h-6" />,
       title: "Conference Begins",
       date: "October 25, 2025",
       status: "upcoming",
@@ -45,17 +45,17 @@ const ImportantDates = () => {
     {
       label: "Conference Dates",
       value: "October 25–27, 2025",
-      icon: <Calendar className="w-5 h-5 text-primary" />
+      icon: <CalendarDays className="w-5 h-5" />
     },
     {
       label: "Conference Venue",
       value: "Al-Sibtain University, Karbala, Iraq",
-      icon: <MapPin className="w-5 h-5 text-primary" />
+      icon: <MapPin className="w-5 h-5" />
     },
     {
       label: "Registration Type",
       value: "Online & On-site Available",
-      icon: <CheckCircle className="w-5 h-5 text-primary" />
+      icon: <CheckCircle2 className="w-5 h-5" />
     }
   ];
 
@@ -87,7 +87,7 @@ const ImportantDates = () => {
                   <Card className="bg-background border-border shadow-card hover:shadow-elevated transition-all duration-300">
                     <CardContent className="p-6">
                       <div className={`flex items-center ${index % 2 === 0 ? 'justify-end' : 'justify-start'} mb-3`}>
-                        <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center shadow-card mr-3">
+                          <div className="w-10 h-10 bg-academic-blue-light rounded-full flex items-center justify-center shadow-card mr-3 text-academic-navy">
                           {date.icon}
                         </div>
                         <span className={`px-3 py-1 rounded-full text-xs font-medium ${
