@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Clock, Star } from "lucide-react";
+import { Clock } from "lucide-react";
 
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -32,16 +32,18 @@ const CountdownTimer = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const formatTwoDigits = (value: number) => String(value).padStart(2, "0").slice(-2);
+
   const timeUnits = [
-    { label: "Days", value: timeLeft.days },
-    { label: "Hours", value: timeLeft.hours },
-    { label: "Minutes", value: timeLeft.minutes },
-    { label: "Seconds", value: timeLeft.seconds },
+    { label: "Days", value: formatTwoDigits(timeLeft.days) },
+    { label: "Hours", value: formatTwoDigits(timeLeft.hours) },
+    { label: "Minutes", value: formatTwoDigits(timeLeft.minutes) },
+    { label: "Seconds", value: formatTwoDigits(timeLeft.seconds) },
   ];
 
   return (
-    <div className="flex items-center justify-center mt-12">
-      <div className="bg-background/15 backdrop-blur-md rounded-3xl p-8 shadow-glow border border-white/20 relative overflow-hidden">
+    <div className="flex items-center justify-center mt-8">
+      <div className="bg-black/50 rounded-2xl p-4 md:p-6 border border-white/15 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-2 left-2 w-6 h-6 border-2 border-academic-gold rounded-full"></div>
@@ -50,47 +52,38 @@ const CountdownTimer = () => {
         </div>
         
         <div className="relative z-10">
-          <div className="flex items-center justify-center mb-6">
-            <div className="bg-gradient-accent rounded-full p-3 mr-4 shadow-elevated">
-              <Clock className="w-8 h-8 text-academic-navy" />
-            </div>
-            <div className="text-center">
-              <span className="text-primary-foreground font-bold text-2xl block">Conference Countdown</span>
-              <span className="text-primary-foreground/80 text-sm">October 25, 2025</span>
-            </div>
+          <div className="flex items-center justify-center mb-3 text-white/85 text-sm">
+            <Clock className="w-4 h-4 mr-2" />
+            <span>Conference Countdown • Oct 25, 2025</span>
           </div>
           
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-4 gap-2 md:gap-4 items-stretch">
             {timeUnits.map((unit, index) => (
               <div key={unit.label} className="text-center relative">
-                <div className="bg-gradient-card backdrop-blur-sm rounded-2xl p-4 mb-3 shadow-elevated border border-white/10 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
+                <div className="bg-white/10 rounded-xl p-2.5 md:p-3 mb-2 border border-white/15">
                   {/* Animated Background */}
                   <div className="absolute inset-0 bg-gradient-to-br from-academic-gold/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  <span className="text-4xl md:text-5xl font-bold text-primary-foreground block relative z-10 bg-gradient-to-r from-white to-academic-gold bg-clip-text text-transparent">
-                    {unit.value.toString().padStart(2, "0")}
+                  <span className="text-3xl md:text-5xl font-extrabold text-white block">
+                    {unit.value}
                   </span>
                   
                   {/* Corner Decoration */}
-                  <div className="absolute top-1 right-1 w-3 h-3 bg-academic-gold/30 rounded-full"></div>
+                  <div className="hidden md:block absolute top-1 right-1 w-2 h-2 bg-white/20 rounded-full"></div>
                 </div>
-                <span className="text-primary-foreground/90 text-base font-semibold">{unit.label}</span>
+                <span className="text-white/85 text-xs md:text-sm font-medium">{unit.label}</span>
                 
-                {/* Separator */}
+                {/* Minimal vertical divider between blocks */}
                 {index < timeUnits.length - 1 && (
-                  <div className="absolute top-1/2 -right-3 transform -translate-y-1/2 z-20">
-                    <Star className="w-4 h-4 text-academic-gold animate-pulse" />
-                  </div>
+                  <div className="hidden md:block absolute top-1/2 -right-2 transform -translate-y-1/2 w-px h-6 bg-white/20" />
                 )}
               </div>
             ))}
           </div>
           
           {/* Additional Info */}
-          <div className="mt-6 text-center">
-            <p className="text-primary-foreground/80 text-sm font-medium">
-              Don't miss this historic event!
-            </p>
+          <div className="mt-2 text-center">
+            <p className="text-white/75 text-xs">Don't miss this historic event!</p>
           </div>
         </div>
       </div>

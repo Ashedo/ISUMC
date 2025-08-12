@@ -219,7 +219,7 @@ const AbstractSubmission = () => {
                     {/* Submit Button */}
                     <Button 
                       type="submit" 
-                      className="w-full bg-gradient-primary hover:bg-primary-hover text-primary-foreground font-semibold py-3 shadow-elevated"
+                      className="w-full bg-academic-gold hover:bg-academic-gold/90 text-academic-navy font-semibold py-3 shadow-elevated"
                     >
                       Submit Abstract
                     </Button>

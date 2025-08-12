@@ -52,8 +52,8 @@ const Navigation = () => {
           <div className="flex items-center space-x-3">
             <img src={mainLogo} alt="IMEConf logo" className="w-10 h-10 object-contain" />
             <div className="hidden md:block">
-              <h1 className="text-lg font-bold text-academic-navy">Iraq Medical Education</h1>
-              <p className="text-xs text-foreground/70">Healthcare Excellence Platform</p>
+              <h1 className="text-lg font-bold text-academic-navy">ISUMEC 2025</h1>
+              <p className="text-xs text-foreground/70">Karbala, Iraq | Oct 25–27, 2025</p>
             </div>
           </div>
 
