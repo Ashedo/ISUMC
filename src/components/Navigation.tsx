@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Globe, Mail, CalendarDays, Phone } from "lucide-react";
+import mainLogo from "@/assets/Logo (5).png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,12 +18,13 @@ const Navigation = () => {
 
   const navItems = [
     { label: "Home", href: "#home" },
-    { label: "Courses", href: "#courses" },
-    { label: "Events", href: "#events" },
-    { label: "Membership", href: "#membership" },
-    { label: "Resources", href: "#resources" },
-    { label: "About Us", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "#about" },
+    { label: "Committees", href: "#committees" },
+    { label: "Submission", href: "#submission" },
+    { label: "Program", href: "#program" },
+    { label: "Speakers", href: "#speakers" },
+    { label: "Contact Us", href: "#contact" },
+    { label: "Registration", href: "/registration" },
   ];
 
   return (
@@ -48,9 +50,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-academic-navy rounded-full flex items-center justify-center border border-academic-blue-dark/20">
-              <span className="text-academic-gold font-bold text-lg">IM</span>
-            </div>
+            <img src={mainLogo} alt="IMEConf logo" className="w-10 h-10 object-contain" />
             <div className="hidden md:block">
               <h1 className="text-lg font-bold text-academic-navy">Iraq Medical Education</h1>
               <p className="text-xs text-foreground/70">Healthcare Excellence Platform</p>
@@ -58,19 +58,25 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <Button
-                key={item.label}
-                variant="ghost"
-                size="sm"
-                className="text-foreground hover:text-academic-gold hover:bg-academic-blue-light transition-colors font-medium"
-                onClick={() => document.getElementById(item.href.slice(1))?.scrollIntoView({ behavior: "smooth" })}
-              >
-                {item.label}
-              </Button>
-            ))}
-          </div>
+            <div className="hidden lg:flex items-center space-x-1">
+              {navItems.map((item) => (
+                <Button
+                  key={item.label}
+                  variant="ghost"
+                  size="sm"
+                  className="text-foreground hover:text-academic-gold hover:bg-academic-blue-light transition-colors font-medium"
+                  onClick={() => {
+                    if (item.href.startsWith('#')) {
+                      document.getElementById(item.href.slice(1))?.scrollIntoView({ behavior: "smooth" });
+                    } else {
+                      window.location.assign(item.href);
+                    }
+                  }}
+                >
+                  {item.label}
+                </Button>
+              ))}
+            </div>
 
           {/* Actions */}
           <div className="flex items-center space-x-2">
@@ -117,7 +123,11 @@ const Navigation = () => {
                   variant="ghost"
                   className="w-full justify-start text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-medium"
                   onClick={() => {
-                    document.getElementById(item.href.slice(1))?.scrollIntoView({ behavior: "smooth" });
+                    if (item.href.startsWith('#')) {
+                      document.getElementById(item.href.slice(1))?.scrollIntoView({ behavior: "smooth" });
+                    } else {
+                      window.location.assign(item.href);
+                    }
                     setIsMenuOpen(false);
                   }}
                 >

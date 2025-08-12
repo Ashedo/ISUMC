@@ -15,19 +15,13 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            About IMEConf 2025
+            About ISUMEC 2025
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-            The First Iraq Medical Education Conference represents a historic milestone in advancing 
-            medical education across Iraq and the broader Middle East region. Hosted by the prestigious 
-            Al-Sibtain University in the holy city of Karbala, this inaugural conference brings together 
-            distinguished medical educators, innovative researchers, dedicated students, and healthcare 
-            professionals.
+            The 1st International Subtain University Medical Education Conference (ISUMEC 2025) will take place in Karbala, Iraq, from 25–27 October 2025. Hosted by Al-Subtain University of Medical Sciences, the International Branch of Tehran University of Medical Sciences, this landmark event aims to position Iraq as a regional hub for medical education innovation by bringing together global and local experts, policymakers, and educators.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Our conference focuses on enhancing educational quality, bridging academic gaps, supporting 
-            innovation in medical research, and promoting meaningful collaboration within the medical 
-            education community. Join us as we shape the future of medical education in Iraq and beyond.
+            The three-day conference features pre-conference workshops, keynote speeches, symposia, and parallel sessions. Key topics include Artificial Intelligence in Medical Education, Competency-Based Medical Education, Quality Assurance and Accreditation, Faculty Development, Workplace-Based Assessment, and Social Accountability. Attendees will benefit from networking, collaboration, and professional development opportunities.
           </p>
         </div>
 
@@ -63,29 +57,29 @@ const AboutSection = () => {
                 <div className="space-y-2">
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-                    <span className="text-foreground">Medicine</span>
+                    <span className="text-foreground">Artificial Intelligence in Medical Education</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-                    <span className="text-foreground">Dentistry</span>
+                    <span className="text-foreground">Competency-Based Medical Education</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-                    <span className="text-foreground">Nursing</span>
+                    <span className="text-foreground">Quality Assurance & Accreditation</span>
                   </div>
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-                    <span className="text-foreground">Pharmacy</span>
+                    <span className="text-foreground">Faculty Development</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-                    <span className="text-foreground">Public Health</span>
+                    <span className="text-foreground">Workplace-Based Assessment</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-                    <span className="text-foreground">Medical Technology</span>
+                    <span className="text-foreground">Social Accountability</span>
                   </div>
                 </div>
               </div>

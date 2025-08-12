@@ -36,8 +36,9 @@ const AbstractSubmission = () => {
             Abstract Submission
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Share your research and contribute to the advancement of medical education. 
-            Submit your abstract and be part of this historic conference.
+            We welcome abstracts across Health Professions Education: Curriculum Development, Teaching and Learning, 
+            Student Assessment, Program Evaluation, Student Well-being, Academic Leadership, Faculty Development, and more. 
+            Submissions are accepted from Medicine, Dentistry, Pharmacy, Nursing, Midwifery, and Allied Health.
           </p>
         </div>
 
@@ -77,7 +78,7 @@ const AbstractSubmission = () => {
                   </div>
                 </div>
 
-                <Button className="w-full mt-6 bg-gradient-primary hover:bg-primary-hover">
+                 <Button className="w-full mt-6 bg-gradient-primary hover:bg-primary-hover">
                   <FileText className="w-4 h-4 mr-2" />
                   Download Template
                 </Button>
@@ -237,31 +238,20 @@ const AbstractSubmission = () => {
                 <div className="w-16 h-16 bg-primary-foreground/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <BookOpenText className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="text-3xl font-bold text-primary-foreground mb-4">
-                  Publication Opportunity
-                </h3>
-                <p className="text-lg text-primary-foreground/90 mb-6">
-                  Accepted abstracts will be published in the Journal of Advances in Medical 
-                  Education and Professionalism (JAMP), a peer-reviewed journal indexed in 
-                  international databases.
+                <h3 className="text-3xl font-bold text-primary-foreground mb-4">Publication Opportunity</h3>
+                <p className="text-lg text-primary-foreground/90 mb-4">
+                  Selected accepted abstracts will be forwarded for peer review and considered for publication in the Journal of Advances in Medical Education and Professionalism (JAMP).
                 </p>
+                <div className="text-primary-foreground/90 text-sm mb-4">
+                  <p>Scopus-indexed journal with a CiteScore of 3.6</p>
+                  <p>ISSN: 2322-2220 | E-ISSN: 2322-3561</p>
+                  <p><a href="https://jamp.sums.ac.ir" target="_blank" rel="noreferrer" className="underline">https://jamp.sums.ac.ir</a></p>
+                  <p>The publication fees will be fully sponsored by Al-Subtain University of Medical Sciences.</p>
+                </div>
                 <div className="flex flex-wrap justify-center gap-4 text-sm text-primary-foreground/80">
-                  <span className="flex items-center">
-                    <CheckCircle className="w-4 h-4 mr-2" />
-                    Peer-reviewed
-                  </span>
-                  <span className="flex items-center">
-                    <CheckCircle className="w-4 h-4 mr-2" />
-                    Internationally indexed
-                  </span>
-                  <span className="flex items-center">
-                    <CheckCircle className="w-4 h-4 mr-2" />
-                    Open access
-                  </span>
-                  <span className="flex items-center">
-                    <CheckCircle className="w-4 h-4 mr-2" />
-                    DOI assigned
-                  </span>
+                  <span className="flex items-center"><CheckCircle className="w-4 h-4 mr-2" />Peer-reviewed</span>
+                  <span className="flex items-center"><CheckCircle className="w-4 h-4 mr-2" />Internationally indexed</span>
+                  <span className="flex items-center"><CheckCircle className="w-4 h-4 mr-2" />Open access</span>
                 </div>
               </div>
             </CardContent>

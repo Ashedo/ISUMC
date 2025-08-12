@@ -59,8 +59,8 @@ const WhoShouldAttend = () => {
             Who Should Attend?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            IMEConf 2025 is designed for a diverse audience of medical education stakeholders 
-            committed to advancing healthcare education in Iraq and the region.
+            ISUMEC 2025 welcomes medical educators, policymakers, healthcare professionals, students, 
+            accreditation representatives, and medical education teams across disciplines and levels.
           </p>
         </div>
 

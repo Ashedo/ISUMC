@@ -26,20 +26,16 @@ const WelcomeSection = () => {
                 <div className="flex-1">
                   <div className="mb-6">
                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-                      It is with great honor and excitement that I welcome you to the First Iraq Medical 
-                      Education Conference (IMEConf 2025). This historic gathering represents a pivotal 
-                      moment in our nation's commitment to advancing medical education excellence.
+                      Dear Delegates, Esteemed Speakers, and Honored Guests,
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                      As we convene in the sacred city of Karbala, we bring together the brightest minds 
-                      in medical education from across Iraq and beyond. This conference serves as a 
-                      platform for sharing innovative teaching methodologies, fostering meaningful 
-                      collaborations, and establishing new standards for medical education in our region.
+                      Under the patronage of His Excellency the Minister of Higher Education and Scientific Research, Dr. Naeem Al-Aboudi, it is with great pleasure that we welcome you to the 1st International Al-Subtain University of Medical Sciences (International Branch of Tehran University of Medical Sciences) Education Conference (ISUMEC 2025) in the historic city of Karbala, Iraq, from 25–27 October 2025.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                      We bring together a distinguished community of global and regional experts, policymakers, and educators dedicated to shaping the future of medical education under the theme: “Advancing Health Professions Education in Iraq (Innovation, Collaboration, and Global Standards).” Our plenary sessions, symposia, workshops, and parallel sessions will delve into Competency-Based Medical Education, Artificial Intelligence, Quality Assurance and Accreditation, Faculty Development, and Social Accountability.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Together, we will shape the future of medical education, ensuring that Iraq's 
-                      healthcare professionals are equipped with the knowledge, skills, and vision 
-                      needed to serve our communities with excellence and compassion.
+                      We are grateful for your participation and look forward to the collective impact of our efforts in advancing medical education for a healthier future.
                     </p>
                   </div>
 
@@ -48,7 +44,7 @@ const WelcomeSection = () => {
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                       <div>
                         <h4 className="text-xl font-semibold text-foreground mb-1">
-                          Prof. [Conference Chair Name]
+                          Prof. Dr. Faris Al Lami
                         </h4>
                         <p className="text-muted-foreground">
                           Dean of Medical Education

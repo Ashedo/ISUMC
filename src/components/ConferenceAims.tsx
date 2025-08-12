@@ -4,36 +4,12 @@ import IconBadge from "@/components/IconBadge";
 
 const ConferenceAims = () => {
   const aims = [
-    {
-      icon: <Target className="w-7 h-7" />,
-      title: "Enhancing Medical Education Quality",
-      description: "Implementing best practices and innovative methodologies to elevate the standard of medical education across Iraqi institutions."
-    },
-    {
-      icon: <Link2 className="w-7 h-7" />,
-      title: "Bridging Academic Gaps",
-      description: "Connecting theoretical knowledge with practical application, ensuring graduates are well-prepared for clinical practice."
-    },
-    {
-      icon: <Lightbulb className="w-7 h-7" />,
-      title: "Supporting Innovation and Research",
-      description: "Fostering a culture of research and innovation in medical education, encouraging evidence-based teaching approaches."
-    },
-    {
-      icon: <UsersRound className="w-7 h-7" />,
-      title: "Promoting Collaboration and Networking",
-      description: "Building strong professional networks among medical educators, institutions, and healthcare organizations."
-    },
-    {
-      icon: <GraduationCap className="w-7 h-7" />,
-      title: "Faculty Development",
-      description: "Providing continuous professional development opportunities for medical educators to enhance their teaching skills."
-    },
-    {
-      icon: <Award className="w-7 h-7" />,
-      title: "Setting Excellence Standards",
-      description: "Establishing benchmarks for medical education excellence that align with international standards and local needs."
-    }
+    { icon: <Target className="w-7 h-7" />, title: "Facilitate exchange of ideas and best practices", description: "Share innovations in teaching, learning, and assessment across institutions." },
+    { icon: <UsersRound className="w-7 h-7" />, title: "Engage international and regional experts", description: "Gather insights on contemporary challenges and opportunities in medical education." },
+    { icon: <Lightbulb className="w-7 h-7" />, title: "Promote research in medical education", description: "Enhance quality in pedagogy and assessment through evidence-based approaches." },
+    { icon: <Link2 className="w-7 h-7" />, title: "Foster collaboration among institutions", description: "Strengthen partnerships in Iraq and beyond for sustained impact." },
+    { icon: <GraduationCap className="w-7 h-7" />, title: "Provide professional development", description: "Offer interactive sessions and networking opportunities for educators." },
+    { icon: <Award className="w-7 h-7" />, title: "Advance standards and accreditation", description: "Align with global best practices while addressing local needs." },
   ];
 
   return (

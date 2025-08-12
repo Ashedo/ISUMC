@@ -6,7 +6,9 @@ const Footer = () => {
   const quickLinks = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
-    { label: "Conference Aims", href: "#aims" },
+    { label: "Committees", href: "#committees" },
+    { label: "Program", href: "#program" },
+    { label: "Speakers", href: "#speakers" },
     { label: "Important Dates", href: "#dates" },
     { label: "Abstract Submission", href: "#submission" },
     { label: "Contact Us", href: "#contact" }
@@ -15,8 +17,8 @@ const Footer = () => {
   const importantInfo = [
     { label: "Conference Dates", value: "October 25–27, 2025" },
     { label: "Location", value: "Karbala, Iraq" },
-    { label: "Organizer", value: "Al-Sibtain University" },
-    { label: "Expected Participants", value: "500+" }
+    { label: "Organizer", value: "Al-Subtain University of Medical Sciences" },
+    { label: "International Partner", value: "Tehran University of Medical Sciences (International Branch)" }
   ];
 
   const socialLinks = [
@@ -32,13 +34,8 @@ const Footer = () => {
       <div className="border-b border-primary-foreground/20">
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Stay Updated with IMEConf 2025
-            </h3>
-            <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest conference updates, speaker announcements, 
-              and important deadlines.
-            </p>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Stay Updated with ISUMEC 2025</h3>
+            <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">Subscribe for updates, speaker announcements, and important deadlines.</p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <Input 
                 type="email" 
@@ -63,14 +60,11 @@ const Footer = () => {
                 <span className="text-academic-navy font-bold text-lg">IM</span>
               </div>
               <div>
-                <h4 className="font-bold text-lg">IMEConf 2025</h4>
-                <p className="text-sm text-primary-foreground/70">Al-Sibtain University</p>
+                <h4 className="font-bold text-lg">ISUMEC 2025</h4>
+                <p className="text-sm text-primary-foreground/70">Al-Subtain University of Medical Sciences</p>
               </div>
             </div>
-            <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              The First Iraq Medical Education Conference - shaping the future of 
-              medical education in Iraq and the region.
-            </p>
+            <p className="text-primary-foreground/80 mb-6 leading-relaxed">The First International Subtain University Medical Education Conference (ISUMEC 2025).</p>
             <div className="space-y-2">
               {importantInfo.map((info, index) => (
                 <div key={index} className="flex items-center text-sm">
@@ -111,11 +105,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-academic-gold flex-shrink-0" />
-                <p className="text-primary-foreground/80">info@imeconf2025.org</p>
+                <p className="text-primary-foreground/80">isumec2025@sums.edu.iq</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-academic-gold flex-shrink-0" />
-                <p className="text-primary-foreground/80">+964 xxx xxx xxx</p>
+                <p className="text-primary-foreground/80">+964 787 5729 523</p>
               </div>
               <div className="flex items-center space-x-3">
                 <CalendarDays className="w-5 h-5 text-academic-gold flex-shrink-0" />
@@ -154,10 +148,10 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="border-t border-primary-foreground/20">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-primary-foreground/70">
-              <p>&copy; 2025 IMEConf - First Iraq Medical Education Conference. All rights reserved.</p>
-            </div>
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <div className="text-sm text-primary-foreground/70">
+                <p>&copy; 2024 ISUMEC 2025. All Rights Reserved. IT Department - Al Subtain University.</p>
+              </div>
             <div className="flex space-x-6 text-sm text-primary-foreground/70">
               <button className="hover:text-academic-gold transition-colors duration-300">
                 Privacy Policy
@@ -170,11 +164,9 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="mt-4 pt-4 border-t border-primary-foreground/10 text-center">
-            <p className="text-sm text-primary-foreground/60">
-              Hosted by Al-Sibtain University | Karbala, Iraq | Medical Education Department
-            </p>
-          </div>
+            <div className="mt-4 pt-4 border-t border-primary-foreground/10 text-center">
+              <p className="text-sm text-primary-foreground/60">Al Subtain University - Karbala, Iraq</p>
+            </div>
         </div>
       </div>
     </footer>

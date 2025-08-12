@@ -11,6 +11,7 @@ import ContactSection from "@/components/ContactSection";
 import NewsGridSection from "@/components/NewsGridSection";
 import Footer from "@/components/Footer";
 import JoinCommunityCTA from "@/components/JoinCommunityCTA";
+import FAQSection from "@/components/FAQSection";
 
 const Index = () => {
   return (
@@ -27,6 +28,11 @@ const Index = () => {
       <AbstractSubmission />
       <JoinCommunityCTA />
       <ContactSection />
+      <FAQSection />
+      {/* Placeholder anchors for navigation */}
+      <div id="committees"></div>
+      <div id="program"></div>
+      <div id="speakers"></div>
       <Footer />
     </div>
   );

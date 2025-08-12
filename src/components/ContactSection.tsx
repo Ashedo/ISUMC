@@ -11,27 +11,23 @@ const ContactSection = () => {
       icon: <MapPin className="w-5 h-5 text-primary" />,
       title: "Address",
       details: [
-        "Al-Sibtain University",
-        "Karbala, Iraq",
-        "Medical Education Department"
+        "Al-Subtain University of Medical Sciences",
+        "International Branch of Tehran University of Medical Sciences",
+        "Karbala, Iraq"
       ]
     },
     {
       icon: <Mail className="w-5 h-5 text-primary" />,
       title: "Email",
       details: [
-        "info@imeconf2025.org",
-        "abstracts@imeconf2025.org",
-        "registration@imeconf2025.org"
+        "isumec2025@sums.edu.iq"
       ]
     },
     {
       icon: <Phone className="w-5 h-5 text-primary" />,
-      title: "Phone & WhatsApp",
+      title: "Phone",
       details: [
-        "+964 xxx xxx xxx",
-        "+964 xxx xxx xxx",
-        "Available 9 AM - 5 PM (GMT+3)"
+        "+964 787 5729 523"
       ]
     }
   ];
@@ -51,8 +47,7 @@ const ContactSection = () => {
             Contact Us
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Have questions about IMEConf 2025? We're here to help. Get in touch with our 
-            organizing committee for any inquiries about registration, abstracts, or the conference.
+            Have questions about ISUMEC 2025? We're here to help. Get in touch with our organizing committee for any inquiries about registration, abstracts, or the conference.
           </p>
         </div>
 
@@ -90,9 +85,7 @@ const ContactSection = () => {
             {/* Social Media */}
             <Card className="bg-background border-border shadow-card mt-6">
               <CardContent className="p-6">
-                <h4 className="text-lg font-semibold text-foreground mb-4">
-                  Follow Us on Social Media
-                </h4>
+                <h4 className="text-lg font-semibold text-foreground mb-4">Follow Us on Social Media</h4>
                 <div className="flex space-x-4">
                   {socialMedia.map((social, index) => (
                     <button
@@ -172,19 +165,24 @@ const ContactSection = () => {
         {/* Map Section */}
         <Card className="bg-background border-border shadow-card">
           <CardContent className="p-0">
-            <div className="h-64 md:h-80 bg-muted rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-foreground mb-2">
-                  Al-Sibtain University, Karbala
-                </h4>
-                <p className="text-muted-foreground mb-4">
-                  Interactive map will be embedded here
-                </p>
-                <Button variant="outline">
-                  View on Google Maps
-                </Button>
-              </div>
+            <div className="h-64 md:h-96 rounded-lg overflow-hidden">
+              <iframe
+                title="Google Map - Al Subtain University"
+                src="https://maps.google.com/maps?q=Al%20Subtain%20University%20Karbala&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <div className="p-4 border-t border-border text-sm">
+              <a
+                href="https://maps.app.goo.gl/hJQWioaGfKsLjiKs6"
+                target="_blank"
+                rel="noreferrer"
+                className="underline text-primary"
+              >
+                Open in Google Maps
+              </a>
             </div>
           </CardContent>
         </Card>

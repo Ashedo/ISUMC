@@ -4,41 +4,9 @@ import { Button } from "@/components/ui/button";
 
 const ImportantDates = () => {
   const dates = [
-    {
-      icon: <FileText className="w-6 h-6" />,
-      title: "Abstract Submission Opens",
-      date: "January 1, 2025",
-      status: "active",
-      description: "Begin submitting your research abstracts"
-    },
-    {
-      icon: <Clock3 className="w-6 h-6" />,
-      title: "Abstract Submission Deadline",
-      date: "August 31, 2025",
-      status: "upcoming",
-      description: "Final date for abstract submissions"
-    },
-    {
-      icon: <CheckCircle2 className="w-6 h-6" />,
-      title: "Abstract Acceptance Notification",
-      date: "September 30, 2025",
-      status: "upcoming",
-      description: "Authors will be notified of acceptance"
-    },
-    {
-      icon: <CalendarDays className="w-6 h-6" />,
-      title: "Early Bird Registration Ends",
-      date: "September 15, 2025",
-      status: "upcoming",
-      description: "Last chance for discounted registration"
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Conference Begins",
-      date: "October 25, 2025",
-      status: "upcoming",
-      description: "IMEConf 2025 officially starts in Karbala"
-    }
+    { icon: <Clock3 className="w-6 h-6" />, title: "Abstract Submission Deadline", date: "August 20, 2025", status: "upcoming", description: "Last day to submit your research abstract" },
+    { icon: <CheckCircle2 className="w-6 h-6" />, title: "Abstract Acceptance Notification", date: "September 15, 2025", status: "upcoming", description: "Notification of accepted abstracts" },
+    { icon: <MapPin className="w-6 h-6" />, title: "Conference Days", date: "October 25–27, 2025", status: "upcoming", description: "Main event in Karbala, Iraq" },
   ];
 
   const conferenceInfo = [
@@ -67,7 +35,7 @@ const ImportantDates = () => {
             Important Dates
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Mark your calendar with these crucial dates for IMEConf 2025. Stay informed 
+            Mark your calendar with these crucial dates for ISUMEC 2025. Stay informed 
             and don't miss any important deadlines.
           </p>
         </div>
