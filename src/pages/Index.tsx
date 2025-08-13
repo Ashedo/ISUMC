@@ -9,6 +9,7 @@ import ImportantDates from "@/components/ImportantDates";
 import AbstractSubmission from "@/components/AbstractSubmission";
 import ContactSection from "@/components/ContactSection";
 import NewsGridSection from "@/components/NewsGridSection";
+import SpeakersSection from "@/components/SpeakersSection";
 import Footer from "@/components/Footer";
 import JoinCommunityCTA from "@/components/JoinCommunityCTA";
 import FAQSection from "@/components/FAQSection";
@@ -21,6 +22,7 @@ const Index = () => {
       <GuidingPrinciples />
       <NewsGridSection />
       <AboutSection />
+      <SpeakersSection />
       <WelcomeSection />
       <ConferenceAims />
       <WhoShouldAttend />
